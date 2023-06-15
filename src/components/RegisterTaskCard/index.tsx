@@ -19,7 +19,7 @@ export const RegisterTaskCard = () => {
 
   // const { addTodo, editTodo } = useTodo();
 
-  function handleSubmit(e: React.ChangeEvent<HTMLSelectElement>) {
+  function handleSubmit(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     e.preventDefault();
 
     dispatch({ type: "ADD_TASK", payload: { task: formData } });
